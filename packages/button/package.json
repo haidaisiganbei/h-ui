@@ -1,0 +1,53 @@
+// openx-ui/packages/button/package.json
+{
+  // 标识信息
+  "name": "@hui/button",
+  "version": "0.0.0",
+
+  // 基本信息
+  "description": "",
+  "keywords": ["vue", "ui", "component library"],
+  "author": "yijie lin",
+  "license": "MIT",
+  "homepage": "https://github.com/gkn1234/openx-ui/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkn1234/openx-ui.git"
+  },
+  "bugs": { 
+    "url" : "https://github.com/gkn1234/openx-ui/issues"
+  },
+
+
+  // 定义脚本，由于还没有集成实际的构建流程，这里先以打印命令代替
+  "scripts": {
+    "build": "echo build",
+    "test": "echo test"
+  },
+
+  // 入口信息，由于没有实际产物，先设置为空字符串
+  "main": "",
+  "module": "",
+  "types": "",
+  "exports": {
+    ".": {
+      "require": "",
+      "module": "",
+      "types": ""
+    }
+  },
+
+  // 发布信息
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  // "publishConfig": {},
+
+  // 依赖信息
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

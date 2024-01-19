@@ -1,0 +1,11 @@
+{
+  "name": "h-ui",
+  "private": true,
+  "scripts": {
+    // 定义脚本
+    "hello": "echo 'hello world'"
+  },
+  "devDependencies": {
+    // 定义各个模块的公共开发依赖
+  }
+}

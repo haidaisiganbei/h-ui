@@ -1,0 +1,16 @@
+// openx-ui/docs/package.json
+{
+  "name": "@hui/docs",
+  "private": true,
+  "scripts": {
+    // 定义脚本，由于还没有集成实际的构建流程，这里先以打印命令代替
+    "dev": "echo dev",
+    "build": "echo build"
+  },
+  "dependencies": {
+    // 安装文档特有依赖
+  },
+  "devDependencies": {
+    // 安装文档特有依赖
+  }
+}

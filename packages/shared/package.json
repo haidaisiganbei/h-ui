@@ -1,3 +1,16 @@
 {
-  "name": "h-ui"
+  "name": "@hui/shared",
+  "scripts": {
+    "build": "vite build"
+  },
+  "main": "./dist/hui-shared.umd.js",
+  "module": "./dist/hui-shared.mjs",
+  "types": "",
+  "exports": {
+    ".": {
+      "require": "./dist/hui-shared.umd.js",
+      "module": "./dist/hui-shared.mjs",
+      "types": ""
+    }
+  }
 }

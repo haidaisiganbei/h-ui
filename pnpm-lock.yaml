@@ -25,6 +25,12 @@ importers:
         specifier: ^5.0.12
         version: 5.0.12(sass@1.70.0)
 
+  demo:
+    dependencies:
+      '@hui/ui':
+        specifier: workspace:^
+        version: link:../packages/ui
+
   docs: {}
 
   packages/button:

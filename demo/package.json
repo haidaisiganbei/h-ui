@@ -1,0 +1,10 @@
+{
+  "name": "@hui/demo",
+  "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@hui/ui": "workspace:^"
+  }
+}

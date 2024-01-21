@@ -23,12 +23,12 @@
   },
   "main": "./dist/hui-button.umn.js",
   "module": "./dist/hui-button.mjs",
-  "types": "",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/hui-button.umn.js",
       "module": "./dist/hui-button.mjs",
-      "types": ""
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [

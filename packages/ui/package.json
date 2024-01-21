@@ -5,10 +5,12 @@
   },
   "main": "./dist/hui.umd.js",
   "module": "./dist/hui.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/hui.mjs",
-      "require": "./dist/hui.umd.js"
+      "require": "./dist/hui.umd.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "dependencies": {

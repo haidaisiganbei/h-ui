@@ -9,9 +9,12 @@
     "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && pnpm run mv-type",
     "dev": "pnpm --filter ./demo run dev",
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./",
-    "lint:style": "stylelint --fix ./**/*.{css,scss,vue,html}"
+    "lint:style": "stylelint --fix ./**/*.{css,scss,vue,html}",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
     "@types/node": "^20.11.5",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
@@ -22,6 +25,7 @@
     "eslint-define-config": "^2.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-vue": "^9.20.1",
+    "husky": "^8.0.3",
     "prettier": "^3.2.4",
     "rimraf": "^5.0.5",
     "sass": "^1.70.0",

@@ -76,6 +76,7 @@ module.exports = defineConfig({
         '**/vitest.config.*',
       ],
       rules: {
+        'import/no-relative-packages': 'off',
         'no-console': 'off',
       },
     },

@@ -3,10 +3,9 @@
   "private": true,
   "scripts": {
     "clean:type": "rimraf ./dist",
-    "mv-type": "tsx ./scripts/dts-mv.ts",
     "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
     "type:src": "vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
-    "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && pnpm run mv-type",
+    "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build",
     "dev": "pnpm --filter ./demo run dev",
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./",
     "lint:style": "stylelint --fix ./**/*.{css,scss,vue,html}",

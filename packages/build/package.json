@@ -1,0 +1,33 @@
+{
+  "name": "@hui/build",
+  "peerDependencies": {
+    "vite": ">=3.0.0",
+    "vue": ">=3.0.0"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@rollup/plugin-replace": "^5.0.5",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "type-fest": "^4.9.0",
+    "typescript": "^5.3.3",
+    "vite-plugin-inspect": "^0.8.1"
+  },
+  "main": "./dist/hui-build.umd.js",
+  "module": "./dist/hui-build.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/hui-build.umd.js",
+      "import": "./dist/hui-build.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
+  }
+}

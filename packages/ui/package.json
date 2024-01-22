@@ -1,20 +1,26 @@
 {
   "name": "@hui/ui",
   "scripts": {
-    "build": "vite build"
+    "build:package": "vite build --mode package",
+    "build:full": "vite build --mode full",
+    "build:full-min": "vite build --mode full-min",
+    "build": "pnpm run build:package && pnpm run build:full && pnpm run build:full-min"
   },
-  "main": "./dist/hui.umd.js",
-  "module": "./dist/hui.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/hui-ui.umd.js",
+  "module": "./dist/hui-ui.mjs",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/hui.mjs",
-      "require": "./dist/hui.umd.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/hui-ui.umd.js",
+      "import": "./dist/hui-ui.mjs",
+      "types": "./dist/src/index.d.ts"
     }
   },
   "dependencies": {
     "@hui/button": "workspace:^",
     "@hui/shared": "workspace:^"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.0"
   }
 }

@@ -5,12 +5,12 @@
   },
   "main": "./dist/hui-shared.umd.js",
   "module": "./dist/hui-shared.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/hui-shared.umd.js",
-      "module": "./dist/hui-shared.mjs",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/hui-shared.mjs",
+      "types": "./dist/src/index.d.ts"
     }
   }
 }

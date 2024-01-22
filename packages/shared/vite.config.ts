@@ -19,6 +19,6 @@ export default defineConfig({
       fileName: 'hui-shared',
     },
     // 为了方便学习，查看构建产物，将此置为 false，不要混淆产物代码
-    minify: false
-  }
+    minify: false,
+  },
 });
